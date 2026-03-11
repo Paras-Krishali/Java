@@ -9,7 +9,6 @@ public class StudentService {
 
     void addStudent(Student s) throws InvalidMarksException {
 
-        // check marks
         if (s.marks < 0 || s.marks > 100) {
             throw new InvalidMarksException("Marks must be between 0 and 100");
         }
@@ -58,5 +57,6 @@ public class StudentService {
 
         }
     }
+
 
 }
